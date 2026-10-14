@@ -11,7 +11,7 @@ const saveToDB = (data)=> {
             }
         })
     })
-}
+}        
 const saveLogsToDB = (data)=> {
     return new Promise((resolve, reject) => {
         fs.appendFile('./model/logger.txt',data, (error, data)=> {
@@ -19,7 +19,7 @@ const saveLogsToDB = (data)=> {
                 reject(error)
             } else {
                 resolve('File written successfully')
-            }
+            } 
         })
     })
 }
